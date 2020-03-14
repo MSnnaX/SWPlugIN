@@ -11,7 +11,6 @@ using SolidWorksTools.File;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-
 namespace SWPlugIN
 {
     /// <summary>
