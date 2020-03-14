@@ -13,9 +13,6 @@ using System.Diagnostics;
 
 namespace SWPlugIN
 {
-    /// <summary>
-    /// Summary description for SWPlugIN.
-    /// </summary>
     [Guid("37178963-1805-4568-a0d7-4b1835fc2d97"), ComVisible(true)]
     [SwAddin(
         Description = "SWPlugIN description",
@@ -40,11 +37,6 @@ namespace SWPlugIN
         Hashtable openDocs = new Hashtable();
         SolidWorks.Interop.sldworks.SldWorks SwEventPtr = null;
         #endregion
-
-        #region Property Manager Variables
-        UserPMPage ppage = null;
-        #endregion
-
 
         // Public Properties
         public ISldWorks SwApp
@@ -346,13 +338,11 @@ namespace SWPlugIN
 
         public Boolean AddPMP()
         {
-            ppage = new UserPMPage(this);
             return true;
         }
 
         public Boolean RemovePMP()
         {
-            ppage = null;
             return true;
         }
 
@@ -392,8 +382,6 @@ namespace SWPlugIN
 
         public void ShowPMP()
         {
-            if (ppage != null)
-                ppage.Show();
         }
 
         public int EnablePMP()
@@ -494,65 +482,23 @@ namespace SWPlugIN
             if (modDoc == null)
                 return false;
 
-            DocumentEventHandler docHandler = null;
 
             if (!openDocs.Contains(modDoc))
             {
                 switch (modDoc.GetType())
                 {
-                    case (int)swDocumentTypes_e.swDocPART:
-                        {
-                            docHandler = new PartEventHandler(modDoc, this);
-                            break;
-                        }
-                    case (int)swDocumentTypes_e.swDocASSEMBLY:
-                        {
-                            docHandler = new AssemblyEventHandler(modDoc, this);
-                            break;
-                        }
-                    case (int)swDocumentTypes_e.swDocDRAWING:
-                        {
-                            docHandler = new DrawingEventHandler(modDoc, this);
-                            break;
-                        }
-                    default:
-                        {
-                            return false; //Unsupported document type
-                        }
                 }
-                docHandler.AttachEventHandlers();
-                openDocs.Add(modDoc, docHandler);
             }
             return true;
         }
 
         public bool DetachModelEventHandler(ModelDoc2 modDoc)
         {
-            DocumentEventHandler docHandler;
-            docHandler = (DocumentEventHandler)openDocs[modDoc];
-            openDocs.Remove(modDoc);
-            modDoc = null;
-            docHandler = null;
             return true;
         }
 
         public bool DetachEventHandlers()
         {
-            DetachSwEvents();
-
-            //Close events on all currently open docs
-            DocumentEventHandler docHandler;
-            int numKeys = openDocs.Count;
-            object[] keys = new Object[numKeys];
-
-            //Remove all document event handlers
-            openDocs.Keys.CopyTo(keys, 0);
-            foreach (ModelDoc2 key in keys)
-            {
-                docHandler = (DocumentEventHandler)openDocs[key];
-                docHandler.DetachEventHandlers(); //This also removes the pair from the hash
-                docHandler = null;
-            }
             return true;
         }
         #endregion

@@ -107,19 +107,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="EventHandling.cs" />
-    <Compile Include="PMPHandler.cs" />
     <Compile Include="SwAddin.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="UserPMPage.cs" />
-    <EmbeddedResource Include="ToolbarLarge.bmp" />
-    <EmbeddedResource Include="ToolbarSmall.bmp" />
-    <EmbeddedResource Include="MainIconLarge.bmp" />
-    <EmbeddedResource Include="MainIconSmall.bmp" />
+    <EmbeddedResource Include="ToolbarL.bmp" />
+    <EmbeddedResource Include="ToolbarS.bmp" />
+    <EmbeddedResource Include="MainIconL.bmp" />
+    <EmbeddedResource Include="MainIconS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MSnnaXSwAI_1.reg" />
+    <None Include="MSnnaXSwAI_2.reg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
