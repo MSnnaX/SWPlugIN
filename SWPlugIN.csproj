@@ -116,9 +116,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SwAddin.cs">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ToolbarL.bmp" />
     <EmbeddedResource Include="Resources\ToolbarS.bmp" />
     <EmbeddedResource Include="Resources\MainIconL.bmp" />
@@ -129,9 +138,7 @@
     <None Include="Resources\SWPlugIN1.reg" />
     <None Include="Resources\SWPlugIN2.reg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\SolidWorks.Interop.sldworks.dll" />
     <Content Include="Resources\SolidWorks.Interop.swconst.dll" />
