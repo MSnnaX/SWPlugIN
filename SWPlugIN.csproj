@@ -11,7 +11,7 @@
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyName>SWPlugIN</AssemblyName>
-    <AssemblyOriginatorKeyFile>SWPlugIN.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Reources\SWPlugIN.snk</AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
@@ -125,9 +125,9 @@
     <EmbeddedResource Include="MainIconS.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="SWPlugIN.snk" />
-    <None Include="SWPlugIN1.reg" />
-    <None Include="SWPlugIN2.reg" />
+    <None Include="Reources\SWPlugIN.snk" />
+    <None Include="Reources\SWPlugIN1.reg" />
+    <None Include="Reources\SWPlugIN2.reg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
