@@ -11,7 +11,7 @@
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyName>SWPlugIN</AssemblyName>
-    <AssemblyOriginatorKeyFile>Reources\SWPlugIN.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Resources\SWPlugIN.snk</AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
@@ -119,24 +119,24 @@
     <Compile Include="SwAddin.cs">
       <SubType>Code</SubType>
     </Compile>
-    <EmbeddedResource Include="ToolbarL.bmp" />
-    <EmbeddedResource Include="ToolbarS.bmp" />
-    <EmbeddedResource Include="MainIconL.bmp" />
-    <EmbeddedResource Include="MainIconS.bmp" />
+    <EmbeddedResource Include="Resources\ToolbarL.bmp" />
+    <EmbeddedResource Include="Resources\ToolbarS.bmp" />
+    <EmbeddedResource Include="Resources\MainIconL.bmp" />
+    <EmbeddedResource Include="Resources\MainIconS.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Reources\SWPlugIN.snk" />
-    <None Include="Reources\SWPlugIN1.reg" />
-    <None Include="Reources\SWPlugIN2.reg" />
+    <None Include="Resources\SWPlugIN.snk" />
+    <None Include="Resources\SWPlugIN1.reg" />
+    <None Include="Resources\SWPlugIN2.reg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Reources\SolidWorks.Interop.sldworks.dll" />
-    <Content Include="Reources\SolidWorks.Interop.swconst.dll" />
-    <Content Include="Reources\SolidWorks.Interop.swpublished.dll" />
-    <Content Include="Reources\solidworkstools.dll" />
+    <Content Include="Resources\SolidWorks.Interop.sldworks.dll" />
+    <Content Include="Resources\SolidWorks.Interop.swconst.dll" />
+    <Content Include="Resources\SolidWorks.Interop.swpublished.dll" />
+    <Content Include="Resources\solidworkstools.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

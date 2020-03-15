@@ -238,10 +238,10 @@ namespace MSnnaXSwAddIn
             }
 
             cmdGroup = iCmdMgr.CreateCommandGroup2(mainCmdGroupID, Title, ToolTip, "", -1, ignorePrevious, ref cmdGroupErr);
-            cmdGroup.LargeIconList = iBmpHad.CreateFileFromResourceBitmap("SWPlugIN.ToolbarL.bmp", thisAssembly);
-            cmdGroup.SmallIconList = iBmpHad.CreateFileFromResourceBitmap("SWPlugIN.ToolbarS.bmp", thisAssembly);
-            cmdGroup.LargeMainIcon = iBmpHad.CreateFileFromResourceBitmap("SWPlugIN.MainIconL.bmp", thisAssembly);
-            cmdGroup.SmallMainIcon = iBmpHad.CreateFileFromResourceBitmap("SWPlugIN.MainIconS.bmp", thisAssembly);
+            cmdGroup.LargeIconList = iBmpHad.CreateFileFromResourceBitmap("SWPlugIN.Resources.ToolbarL.bmp", thisAssembly);
+            cmdGroup.SmallIconList = iBmpHad.CreateFileFromResourceBitmap("SWPlugIN.Resources.ToolbarS.bmp", thisAssembly);
+            cmdGroup.LargeMainIcon = iBmpHad.CreateFileFromResourceBitmap("SWPlugIN.Resources.MainIconL.bmp", thisAssembly);
+            cmdGroup.SmallMainIcon = iBmpHad.CreateFileFromResourceBitmap("SWPlugIN.Resources.MainIconS.bmp", thisAssembly);
 
             //menuToolbarOption = 1:display in menu;2:display in toolbar;3:display in both;
             int mTbO = (int)(swCommandItemType_e.swMenuItem | swCommandItemType_e.swToolbarItem);
