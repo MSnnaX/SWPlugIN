@@ -21,6 +21,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_43CF0D72D77E9D091ADC246BD3451E76"
+        "OwnerKey" = "8:_894267A3B33641FEBE264F33195B8677"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_4861085ECE1E4F939D124B989FE1C6BE"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -47,6 +53,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_894267A3B33641FEBE264F33195B8677"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_43CF0D72D77E9D091ADC246BD3451E76"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -162,6 +174,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_43CF0D72D77E9D091ADC246BD3451E76"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:SolidWorksTools, Version=2.0.0.0, Culture=neutral, PublicKeyToken=bd18593873b4686d, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_43CF0D72D77E9D091ADC246BD3451E76"
+                    {
+                    "Name" = "8:solidworkstools.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:solidworkstools.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_3D29C65C7CCB444996B0EBA67991292C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4861085ECE1E4F939D124B989FE1C6BE"
@@ -291,15 +334,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SWPlugININS"
-        "ProductCode" = "8:{A7974D9E-6193-4D9D-8193-6452026B53DE}"
-        "PackageCode" = "8:{E9F302A1-6231-42B1-9E5E-52D3B90D706C}"
+        "ProductCode" = "8:{5222AD7A-818E-4EF7-9433-6BCA49F323EC}"
+        "PackageCode" = "8:{4EC80804-6A5D-46D3-B23A-567731D524F6}"
         "UpgradeCode" = "8:{20E5B834-9D7A-4A92-8C4E-7A519495AA73}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.1.1"
+        "ProductVersion" = "8:1.1.2"
         "Manufacturer" = "8:MSnnaX"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
