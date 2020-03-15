@@ -21,7 +21,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_03417F55F0D043920C0E6D97D5359D62"
+        "MsmKey" = "8:_0303639B32B98D74DCA7634D18AAD897"
         "OwnerKey" = "8:_894267A3B33641FEBE264F33195B8677"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -58,7 +58,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_03417F55F0D043920C0E6D97D5359D62"
+        "OwnerKey" = "8:_0303639B32B98D74DCA7634D18AAD897"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -176,20 +176,15 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_03417F55F0D043920C0E6D97D5359D62"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0303639B32B98D74DCA7634D18AAD897"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:SolidWorksTools, Version=2.0.0.0, Culture=neutral, PublicKeyToken=bd18593873b4686d, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_03417F55F0D043920C0E6D97D5359D62"
-                    {
-                    "Name" = "8:SolidWorksTools.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
-            "SourcePath" = "8:SolidWorksTools.dll"
+            "SourcePath" = "8:solidworkstools.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_3D29C65C7CCB444996B0EBA67991292C"
@@ -323,15 +318,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SWPlugININS"
-        "ProductCode" = "8:{E95539FB-020E-44DA-AF12-DC880E1FCE2B}"
-        "PackageCode" = "8:{28E2C8B2-839F-4196-82F6-A70C99DAF33A}"
+        "ProductCode" = "8:{1AAD5699-0283-4AEE-ADBC-55D4DD1895B6}"
+        "PackageCode" = "8:{5A496B4F-DA13-4C13-B796-7D86D7AF4153}"
         "UpgradeCode" = "8:{20E5B834-9D7A-4A92-8C4E-7A519495AA73}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.1"
+        "ProductVersion" = "8:1.0.2"
         "Manufacturer" = "8:MSnnaX"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
